@@ -54,7 +54,7 @@ gulp.task('build', function(cb) {
         cacheDir: './build/cache',
         platforms: platforms,
         macIcns: './app/assets/icons/play-icon.icns',
-        winIco: './app/assets/icons/play-icon.ico',
+        winIco: './app/assets/icons/logo.ico',
         checkVersions: false
     })
 
