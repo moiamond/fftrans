@@ -8,6 +8,11 @@ gulp.task('run', shell.task([
     'node node_modules/node-webkit-builder/bin/nwbuild -r ./'
 ]));
 
+// Run project
+gulp.task('runosx', shell.task([
+    '~/.nvm/versions/io.js/v1.7.1/bin/iojs node_modules/node-webkit-builder/bin/nwbuild -r ./'
+]));
+
 gulp.task('build', function(cb) {
 
     // Read package.json
