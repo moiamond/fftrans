@@ -2,3 +2,5 @@
 /app/public/libs
 /build
 .idea
+.settings
+typings
