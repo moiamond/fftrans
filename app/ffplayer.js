@@ -3,16 +3,15 @@
  */
 
 var fs = require('fs');
-
 var ffmpeg = require('fluent-ffmpeg');
 
-ffmpeg.setFfmpegPath('./bin/osx/x64/ffmpeg');
-ffmpeg.setFfprobePath('./bin/osx/x64/ffprobe');
+ffmpeg.setFfmpegPath('./bin/win/x64/ffmpeg');
+ffmpeg.setFfprobePath('./bin/win/x64/ffprobe');
 
 var command = ffmpeg();
 
 ffmpeg.getAvailableFormats(function(err, format) {
-    console.log("Avaliable format:");
+    console.log("Available format:");
 
     console.log(format);
 });
